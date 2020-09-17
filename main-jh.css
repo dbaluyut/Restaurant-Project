@@ -1,0 +1,52 @@
+/* All of the body and all encompassing css goes here */
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+#main {
+}
+#tabs {
+  display: flex;
+  flex-flow: row;
+}
+
+/* STORY css */
+#storyButton {
+}
+#storyBody {
+}
+#storyImg {
+}
+
+/* MENU css */
+/* flex display?
+  col => col(full width) */
+#menuButton {
+}
+#menuBody {
+}
+#apps {
+}
+#entrees {
+}
+#desserts {
+}
+
+/* RESERVATION css */
+#rezButton {
+}
+#rezBody {
+}
+#name {
+}
+#numGuests {
+}
+#date {
+}
+#notes {
+}
+#seating {
+}
+/* FOOD photos sidebar */
+#aside {
+}
