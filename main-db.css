@@ -1,0 +1,69 @@
+#header {
+  border: 1px solid red;
+  margin-bottom: 2rem;
+}
+
+* {
+  font-family: helvetica;
+  margin: 0;
+}
+
+#logo {
+  height: 6rem;
+  width: 6rem;
+  border: 1px solid green;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid orange;
+}
+
+#social-media-box {
+  width: 12rem;
+  height: 6rem;
+  border: 1px solid green;
+}
+
+body {
+  margin: 40px;
+}
+
+#hero-banner {
+  margin-top: 2rem;
+  height: 14rem;
+  background-color: #f3edb6;
+}
+
+/* CARDS CSS */
+#cards {
+  display: flex;
+  height: 14rem;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.card {
+  padding: 1rem;
+}
+
+.card h4 {
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 0.8rem;
+}
+
+#card1 {
+  width: 20rem;
+  border: 1px solid blue;
+}
+
+#special-img {
+  height: 6rem;
+  background-color: #f3edb6;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
