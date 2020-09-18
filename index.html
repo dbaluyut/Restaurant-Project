@@ -13,11 +13,11 @@
 
     <div id="main">
       <div id="tabs">
-        <button id="storyButton">Our Story</button>
-        <button id="menuButton">Menu</button>
-        <button id="rezButton">Reservations</button>
+        <button class="tab" id="storyButton">Our Story</button>
+        <button class="tab" id="menuButton">Menu</button>
+        <button class="tab" id="rezButton">Reservations</button>
       </div>
-      <div id="storyBody">
+      <div class="active content" id="storyBody">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor
           felis at consectetur placerat. Sed ac nisl iaculis, interdum risus
@@ -51,14 +51,12 @@
           mauris. Nulla dapibus nunc nec dapibus iaculis.
         </p>
       </div>
-      <div id="menuBody">
-        <div id="apps">
-          
-        </div>
+      <div class="hide content" id="menuBody">
+        <div id="apps"></div>
         <div id="entrees"></div>
         <div id="desserts"></div>
       </div>
-      <div id="rezBody">
+      <div class="hide content" id="rezBody">
         <form action="">
           <label for="name">Full Name</label></br>
             <input id="name" name="name" type="text">
@@ -85,17 +83,21 @@
 </html>
 
 <!-- menu sub-div ex. -->
-<h2>Appetizers</h2>
-<hr> <!-- /\ or a border bottom? -->
-<div>
-  <h3>Food title</h3>
-<span>........</span>
-<h5>25</h5>
-</div>
-<div>
-  <p>Description</p>
+<!-- \||/ border bottom -->
+<!--  \/  & outline bottom -->
+<!-- <h2>Our Dinner Selection...</h2> -->
+
+<!-- <h2>Appetizers</h2> -->
+<!-- /\ or a border bottom? -->
+
+<!-- <hr>  -->
+<!-- <div> -->
+  <!-- <h3>Food title</h3> -->
+<!-- <span>........</span> -->
+<!-- <h5>25</h5> -->
+<!-- </div> -->
+<!-- <div> -->
+  <!-- <p>Description</p> -->
   <!-- border left on food info icons -->
-  <div><!-- insert food icons here (if available) --></div>
-</div>
-
-
+  <!-- <div>insert food icons here (if available)</div> -->
+<!-- </div> -->

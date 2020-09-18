@@ -9,7 +9,13 @@ body {
   display: flex;
   flex-flow: row;
 }
-
+.tab {
+}
+.content {
+}
+.hide {
+  display: none;
+}
 /* STORY css */
 #storyButton {
 }

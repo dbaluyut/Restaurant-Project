@@ -6,7 +6,7 @@
 //        extra: {
 //          spicy
 //            }
-//      }      
+//      }
 //    ]}
 // {entrees: [
 //    item {
@@ -15,7 +15,7 @@
 //        extra: {
 //          spicy
 //            }
-//      }      
+//      }
 //    ]}
 // {desserts: [
 //    item {
@@ -24,7 +24,7 @@
 //        extra: {
 //          spicy
 //            }
-//      }      
+//      }
 //    ]}
 
 //......................................................
@@ -43,3 +43,21 @@
 //.MMM.MMMMM.MMM..EEEEEEEEEEE.NNN....NNNN....UUUUUUU....
 //......................................................
 //......................................................
+
+fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
+  .then((resp) => resp.json())
+  .then((menu) => {
+    console.log(menu)
+    console.log(menu.appetizers)
+    console.log(menu.appetizers[0])
+    console.log(menu.appetizers[0].name)
+    // for (let i = 0; i < menu.length; i++) {}
+    // console.log([i])
+  })
+
+const tabs = document.querySelector("#tabs")
+
+tabs.addEventListener("click", function (e) {
+  e.preventDefault
+  const select = e.target.
+})
