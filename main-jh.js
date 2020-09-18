@@ -44,20 +44,33 @@
 //......................................................
 //......................................................
 
+const appetizers = document.querySelector("#apps")
+const entrees = document.querySelector("#entrees")
+const desserts = document.querySelector("#desserts")
+
 fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
   .then((resp) => resp.json())
   .then((menu) => {
-    console.log(menu)
-    console.log(menu.appetizers)
-    console.log(menu.appetizers[0])
-    console.log(menu.appetizers[0].name)
-    // for (let i = 0; i < menu.length; i++) {}
+    function appFunct() {
+      for (let i = 0; i < menu.appetizers.length; i++) {
+        console.log(menu.appetizers[i])
+        console.log(menu.appetizers[i].name)
+        return `<div class="itemLine">
+        <h3>${menu.appetizers[i].name}</h3>
+        </div>`
+        // console.log(menu)
+        // console.log(menu.appetizers)
+      }
+    }
+    // console.log(menu.appetizers[0].name)
+    // for (let i = 0; i < menu.appetizers.length; i++) {}
     // console.log([i])
+    appetizers.innerHTML = appFunct()
   })
 
-const tabs = document.querySelector("#tabs")
+// const tabs = document.querySelector("#tabs")
 
-tabs.addEventListener("click", function (e) {
-  e.preventDefault
-  const select = e.target.
-})
+// tabs.addEventListener("click", function (e) {
+//   e.preventDefault
+// const select = e.target.
+// })
