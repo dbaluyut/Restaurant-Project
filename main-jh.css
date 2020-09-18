@@ -35,6 +35,23 @@ body {
 }
 #menuBody {
 }
+.itemLine {
+  display: inline-flex;
+  width: 100%;
+  align-items: baseline;
+}
+.itemName {
+}
+.vertBreak {
+  flex-grow: 1;
+  border-bottom: 2px dotted #000;
+  margin: 0% 1%;
+}
+.itemPrice {
+}
+.descLine {
+}
+
 #apps {
 }
 #entrees {
