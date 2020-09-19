@@ -51,67 +51,84 @@ const desserts = document.querySelector("#desserts")
 fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
   .then((resp) => resp.json())
   .then((menu) => {
-    return menu.appetizers
+    // console.log(menu.entrees)
+    return [menu.appetizers, menu.entrees, menu.desserts]
   })
   .then((item) => {
+    console.log(item)
     appFunct = () => {
-      console.log(item)
-      // console.log(item.name)
-      // for (let x of item) {
-      //   // console.log(x)
-      //   console.log(item[x])
-      //   console.log(item[x].name)
-      //   return `<h3>${item[x].name}</h3>`
-      // }
-      return item
-        .map((x) => {
-          console.log(x)
-          console.log(x.name)
-          console.log(x.price)
-          return `<div class="itemLine">
+      return item[0].map((x) => {
+        // console.log(x)
+        // console.log(x.name)
+        // console.log(x.price)
+        return `<div class="itemLine">
           <h3 class="itemName">${x.name}</h3>
           <div class="vertBreak"></div>
           <h5>${x.price}</h5>
           </div>
           <div class="descLine">
-          <span>${x.description}</span>
+          <span>${x.description}</span>DD
           <div class="foodInfo"></div>
           </div>`
-        })
-        .join("")
-    .then((menu) => {
-      return menu.entrees
-    })
-    .then((item) => {
-      entreeFunct
-    })
-      //for the food info, should I use an if statement?
-      // or like filter it orrrr what my guy?
-
-      // console.log(item)
-      // console.log(item.name)
-      // for (let x in item) {
-      //   console.log(item)
-      //   // console.log(menu.[x])
-      //   // console.log(menu.[x].name)
-      //   // return `<div class="itemLine">
-      //   // <h3>${item[x].name}</h3>
-      //   // </div>`
-      // }
-      // for (let i = 0; i < menu.appetizers.length; i++) {}
-      //   console.log(menu.appetizers[i])
-      //   console.log(menu.appetizers[i].name)
-      // return `<div class="itemLine">
-      // <h3>${menu.appetizers[i].name}</h3>
-      // </div>`
-      // console.log(menu)
-      // console.log(menu.appetizers)
+      })
     }
+
     // console.log(menu.appetizers[0].name)
     // for (let i = 0; i < menu.appetizers.length; i++) {}
     // console.log([i])
-    appetizers.innerHTML = appFunct()
+    appetizers.innerHTML = appFunct().join("")
   })
+  .then((item2) => {
+    console.log(item2)
+    entreeFunct = () => {}
+  })
+// fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
+// .then((resp) => resp.json())
+// .then((item) => {
+//   console.log(menu.entrees)
+//   return menu.entrees
+// })
+// .then((item) => {
+//   entreeFunct = () => {
+//     console.log(item)
+//   }
+// })
+// .catch((err) => alert("Error", err))
+
+// THIS CHUNK OF CODE WAS INSIDE OF THE appFunct
+
+// .join("")
+// .catch(err => console.log(err))
+//for the food info, should I use an if statement?
+// or like filter it orrrr what my guy?
+
+// console.log(item)
+// console.log(item.name)
+// for (let x of item) {
+//   // console.log(x)
+//   console.log(item[x])
+//   console.log(item[x].name)
+//   return `<h3>${item[x].name}</h3>`
+// }
+
+// console.log(item)
+// console.log(item.name)
+// for (let x in item) {
+//   console.log(item)
+//   // console.log(menu.[x])
+//   // console.log(menu.[x].name)
+//   // return `<div class="itemLine">
+//   // <h3>${item[x].name}</h3>
+//   // </div>`
+// }
+// for (let i = 0; i < menu.appetizers.length; i++) {}
+//   console.log(menu.appetizers[i])
+//   console.log(menu.appetizers[i].name)
+// return `<div class="itemLine">
+// <h3>${menu.appetizers[i].name}</h3>
+// </div>`
+// console.log(menu)
+// console.log(menu.appetizers)
 
 // const tabs = document.querySelector("#tabs")
 
