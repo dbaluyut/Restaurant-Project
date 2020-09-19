@@ -48,16 +48,17 @@ const appetizers = document.querySelector("#apps")
 const entrees = document.querySelector("#entrees")
 const desserts = document.querySelector("#desserts")
 
+// TESTING MENU CODE HERE
 fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
   .then((resp) => resp.json())
   .then((menu) => {
     // console.log(menu.entrees)
-    return [menu.appetizers, menu.entrees, menu.desserts]
+    return menu.appetizers
   })
   .then((item) => {
     console.log(item)
     appFunct = () => {
-      return item[0].map((x) => {
+      return item.map((x) => {
         // console.log(x)
         // console.log(x.name)
         // console.log(x.price)
@@ -67,21 +68,103 @@ fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
           <h5>${x.price}</h5>
           </div>
           <div class="descLine">
-          <span>${x.description}</span>DD
+          <span>${x.description}</span>
           <div class="foodInfo"></div>
           </div>`
       })
     }
-
-    // console.log(menu.appetizers[0].name)
-    // for (let i = 0; i < menu.appetizers.length; i++) {}
-    // console.log([i])
     appetizers.innerHTML = appFunct().join("")
   })
-  .then((item2) => {
-    console.log(item2)
-    entreeFunct = () => {}
+
+fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
+  .then((resp) => resp.json())
+  .then((menu) => {
+    console.log(menu.entrees)
+    return menu.entrees
   })
+  .then((item) => {
+    console.log(item)
+    entreeFunct = () => {
+      return item.map((x) => {
+        // console.log(x)
+        // console.log(x.name)
+        // console.log(x.price)
+        return `<div class="itemLine">
+        <h3 class="itemName">${x.name}</h3>
+        <div class="vertBreak"></div>
+        <h5>${x.price}</h5>
+        </div>
+        <div class="descLine">
+        <span>${x.description}</span>
+        <div class="foodInfo"></div>
+        </div>`
+      })
+    }
+    entrees.innerHTML = entreeFunct().join("")
+  })
+
+fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
+  .then((resp) => resp.json())
+  .then((menu) => {
+    console.log(menu.desserts)
+    return menu.desserts
+  })
+  .then((item) => {
+    console.log(item)
+    dessertFunct = () => {
+      return item.map((x) => {
+        // console.log(x)
+        // console.log(x.name)
+        // console.log(x.price)
+        return `<div class="itemLine">
+        <h3 class="itemName">${x.name}</h3>
+        <div class="vertBreak"></div>
+        <h5>${x.price}</h5>
+        </div>
+        <div class="descLine">
+        <span>${x.description}</span>
+        <div class="foodInfo"></div>
+        </div>`
+      })
+    }
+    desserts.innerHTML = dessertFunct().join("")
+  })
+
+//ORIGINAL CODE here
+// fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
+//   .then((resp) => resp.json())
+//   .then((menu) => {
+//     // console.log(menu.entrees)
+//     return [menu.appetizers, menu.entrees, menu.desserts]
+//   })
+//   .then((item) => {
+//     console.log(item)
+//     appFunct = () => {
+//       return item[0].map((x) => {
+//         // console.log(x)
+//         // console.log(x.name)
+//         // console.log(x.price)
+//         return `<div class="itemLine">
+//           <h3 class="itemName">${x.name}</h3>
+//           <div class="vertBreak"></div>
+//           <h5>${x.price}</h5>
+//           </div>
+//           <div class="descLine">
+//           <span>${x.description}</span>
+//           <div class="foodInfo"></div>
+//           </div>`
+//       })
+//     }
+
+//   // console.log(menu.appetizers[0].name)
+//   // for (let i = 0; i < menu.appetizers.length; i++) {}
+//   // console.log([i])
+//   appetizers.innerHTML = appFunct().join("")
+// })
+// .then((item) => {
+//   entreeFunct = () => {
+//     console.log(item)
+//   }
 // fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
 // .then((resp) => resp.json())
 // .then((item) => {
