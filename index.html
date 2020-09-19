@@ -10,13 +10,12 @@
     <div id="header"></div>
 
     <div id="cards"></div>
-
+    <div id="tabs">
+      <button class="tab" id="storyButton">Our Story</button>
+      <button class="tab" id="menuButton">Menu</button>
+      <button class="tab" id="rezButton">Reservations</button>
+    </div>
     <div id="main">
-      <div id="tabs">
-        <button class="tab" id="storyButton">Our Story</button>
-        <button class="tab" id="menuButton">Menu</button>
-        <button class="tab" id="rezButton">Reservations</button>
-      </div>
       <div class="active content" id="storyBody">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor
@@ -51,7 +50,7 @@
           mauris. Nulla dapibus nunc nec dapibus iaculis.
         </p>
       </div>
-      <div class="content" id="menuBody">
+      <div class="content hide" id="menuBody">
         <h2 id="menuTitle">Our Dinner Selection...</h2>
         <hr>
         <h2 class="menuSubtitle">Appetizers</h2>
@@ -61,7 +60,7 @@
         <h2 class="menuSubtitle">Desserts</h2>
           <div id="desserts"></div>
       </div>
-      <div class="content" id="rezBody">
+      <div class="content hide" id="rezBody">
         <form action="">
           <label for="name">Full Name</label></br>
             <input id="name" name="name" type="text">
@@ -79,10 +78,17 @@
             <button>Reserve Table!</button>
         </form>
       </div>
-    </div>
     <!-- how do I get this to go to the side? -->
     <!-- Grid is possible but might freak it, -->
-    <div id="aside"></div>
+      <div id="aside">
+        <h2 id="foodImgTitle">Food Photos...</h2>
+        <img class="foodImg" src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1014&q=80" alt="Chicken wings">
+        <img class="foodImg" src="https://images.unsplash.com/photo-1565685715002-ad8fb82681c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Spinach and artichoke dip.">
+        <img class="foodImg" src="https://images.unsplash.com/photo-1593030668930-8130abedd2b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="Baby-back ribs">
+        <img class="foodImg" src="https://images.unsplash.com/photo-1579366948929-444eb79881eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="16 oz. steak">
+        <img class="foodImg" src="https://images.unsplash.com/photo-1559143113-d1a1049f31f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80" alt="Bread pudding">
+      </div>
+    </div>
     <script src="main-jh.js"></script>
   </body>
 </html>
