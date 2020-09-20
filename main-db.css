@@ -1,0 +1,132 @@
+#header {
+  /* border: 1px solid red; */
+  margin-bottom: 2rem;
+}
+
+* {
+  font-family: helvetica;
+  margin: 0;
+}
+
+#logo h3 {
+  font-weight: lighter;
+}
+
+#logo {
+  padding: 0 3rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 4rem;
+  /* width: 12rem; */
+  border: 1px solid green;
+  border-radius: 0 2rem 0 2rem;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid orange; */
+}
+
+#social-media-box {
+  width: 14rem;
+  height: 6rem;
+  /* border: 1px solid green; */
+  font-size: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  margin: 40px;
+}
+
+#hero-banner {
+  margin-top: 2rem;
+  height: 20rem;
+  /* background-color: #f3edb6;
+   */
+  background-image: url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  background-position-y: -33rem;
+}
+
+/* CARDS CSS */
+#cards {
+  display: flex;
+  height: 18rem;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.card {
+  padding: 1rem;
+}
+
+.card h4 {
+  /* margin-bottom: 1rem; */
+  border-bottom: 1.5px solid gray;
+  padding-bottom: 1rem;
+}
+
+.card p {
+  font-size: 0.8rem;
+}
+
+#card1 {
+  width: 25rem;
+  /* border: 1px solid blue; */
+  background-color: #fff3cc;
+}
+
+#special-img {
+  height: 8rem;
+  /* background-color: #f3edb6;
+   */
+  background-image: url(https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2753&q=80);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-size: 100%;
+  background-position-y: -15rem;
+}
+
+#special-description {
+  margin-top: 5px;
+}
+
+#map {
+  margin-top: 1rem;
+  border: 1px solid black;
+}
+
+#special-name {
+  font-weight: bold;
+}
+#special-name p {
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+#headline {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+#headline h4 {
+  border-bottom: none;
+  padding-bottom: none;
+}
+
+#address {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}

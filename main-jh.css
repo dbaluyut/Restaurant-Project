@@ -1,8 +1,3 @@
-/* All of the body and all encompassing css goes here */
-body {
-  width: 80%;
-  margin: 0 auto;
-}
 #main {
   display: flex;
   flex-flow: row nowrap;
