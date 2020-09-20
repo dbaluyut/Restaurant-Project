@@ -11,72 +11,74 @@
 
     <div id="cards"></div>
     <div id="tabs">
-      <button class="tab" id="storyButton">Our Story</button>
-      <button class="tab" id="menuButton">Menu</button>
-      <button class="tab" id="rezButton">Reservations</button>
+      <button class="tabBtn" data-id="storyBody">Our Story</button>
+      <button class="tabBtn" data-id="menuBody">Menu</button>
+      <button class="tabBtn" data-id="rezBody">Reservations</button>
     </div>
     <div id="main">
-      <div class="active content" id="storyBody">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor
-          felis at consectetur placerat. Sed ac nisl iaculis, interdum risus
-          quis, finibus dolor. Vestibulum ante ipsum primis in faucibus orci
-          luctus et ultrices posuere cubilia curae; Duis non efficitur lorem,
-          sit amet laoreet risus. Etiam efficitur leo ac ornare semper.
-          Suspendisse eu diam quis nisl rhoncus dignissim. Suspendisse in enim
-          quis quam feugiat ornare. Nullam viverra in dui ac laoreet. Nullam
-          eget lacus laoreet, cursus diam sed, elementum erat. Curabitur libero
-          metus, elementum eu suscipit a, congue ut turpis. Nunc vulputate leo
-          lorem. Suspendisse congue pellentesque urna. Fusce aliquam molestie
-          porta. Sed a tempus sapien, et finibus mi. Quisque laoreet tincidunt
-          consectetur. Aenean odio nisi, volutpat id libero vitae, aliquam
-          bibendum mauris. Vestibulum interdum tortor id ultricies lobortis.
-        </p>
-        <img id="storyImg" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" />
-        <p>
-          Nunc quis tortor sed odio bibendum porta. Aenean eget est fermentum,
-          sollicitudin augue vel, laoreet lorem. Curabitur eget orci auctor,
-          accumsan sem eget, lobortis ipsum. Curabitur eu urna ut urna
-          scelerisque maximus. Cras tincidunt pulvinar urna, at aliquam sapien
-          ullamcorper a. Maecenas id est arcu. Vestibulum id libero justo.
-          Curabitur luctus blandit dolor a facilisis. Vivamus finibus cursus
-          dignissim. Cras hendrerit pellentesque nisl, ac tempus mauris
-          tincidunt a. Praesent sed tempus turpis. Sed luctus tortor rutrum elit
-          imperdiet luctus. Duis nunc magna, aliquet sed metus ut, ullamcorper
-          sodales diam. Sed luctus tortor et magna posuere, quis interdum sem
-          mattis. Nulla at felis rhoncus massa hendrerit eleifend. Nam libero
-          tortor, consectetur vel facilisis sit amet, posuere lobortis erat.
-          Donec blandit mauris ut rhoncus tincidunt. Vivamus condimentum urna
-          mauris. Nulla dapibus nunc nec dapibus iaculis.
-        </p>
-      </div>
-      <div class="content hide" id="menuBody">
-        <h2 id="menuTitle">Our Dinner Selection...</h2>
-        <hr>
-        <h2 class="menuSubtitle">Appetizers</h2>
-          <div id="apps"></div>
-        <h2 class="menuSubtitle">Entrees</h2>
-          <div id="entrees"></div>
-        <h2 class="menuSubtitle">Desserts</h2>
-          <div id="desserts"></div>
-      </div>
-      <div class="content hide" id="rezBody">
-        <form action="">
-          <label for="name">Full Name</label></br>
-            <input id="name" name="name" type="text">
-          <label for="numGuests">Number of Guest</label></br>
-            <input id="numGuests" name="numGuests" type="text">
-          <label for="date">Date</label></br>
-            <input id="date" name="date" type="date">
-          <label for="notes">Special Notes</label>
-            <input id="notes" name="notes" type="text">
-          <label for="seating">Seating Preference</label>
-            <select id="seating" name="seating" type="text">
-              <option value="indoor">Indoor</option>
-              <option value="outdoor">Outdoor</option>
-            </select>
-            <button>Reserve Table!</button>
-        </form>
+      <div id="tabContainer">
+        <div class="active content" id="storyBody">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor
+            felis at consectetur placerat. Sed ac nisl iaculis, interdum risus
+            quis, finibus dolor. Vestibulum ante ipsum primis in faucibus orci
+            luctus et ultrices posuere cubilia curae; Duis non efficitur lorem,
+            sit amet laoreet risus. Etiam efficitur leo ac ornare semper.
+            Suspendisse eu diam quis nisl rhoncus dignissim. Suspendisse in enim
+            quis quam feugiat ornare. Nullam viverra in dui ac laoreet. Nullam
+            eget lacus laoreet, cursus diam sed, elementum erat. Curabitur libero
+            metus, elementum eu suscipit a, congue ut turpis. Nunc vulputate leo
+            lorem. Suspendisse congue pellentesque urna. Fusce aliquam molestie
+            porta. Sed a tempus sapien, et finibus mi. Quisque laoreet tincidunt
+            consectetur. Aenean odio nisi, volutpat id libero vitae, aliquam
+            bibendum mauris. Vestibulum interdum tortor id ultricies lobortis.
+          </p>
+          <img id="storyImg" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="" />
+          <p>
+            Nunc quis tortor sed odio bibendum porta. Aenean eget est fermentum,
+            sollicitudin augue vel, laoreet lorem. Curabitur eget orci auctor,
+            accumsan sem eget, lobortis ipsum. Curabitur eu urna ut urna
+            scelerisque maximus. Cras tincidunt pulvinar urna, at aliquam sapien
+            ullamcorper a. Maecenas id est arcu. Vestibulum id libero justo.
+            Curabitur luctus blandit dolor a facilisis. Vivamus finibus cursus
+            dignissim. Cras hendrerit pellentesque nisl, ac tempus mauris
+            tincidunt a. Praesent sed tempus turpis. Sed luctus tortor rutrum elit
+            imperdiet luctus. Duis nunc magna, aliquet sed metus ut, ullamcorper
+            sodales diam. Sed luctus tortor et magna posuere, quis interdum sem
+            mattis. Nulla at felis rhoncus massa hendrerit eleifend. Nam libero
+            tortor, consectetur vel facilisis sit amet, posuere lobortis erat.
+            Donec blandit mauris ut rhoncus tincidunt. Vivamus condimentum urna
+            mauris. Nulla dapibus nunc nec dapibus iaculis.
+          </p>
+        </div>
+        <div class="content" id="menuBody">
+          <h2 id="menuTitle">Our Dinner Selection...</h2>
+          <hr>
+          <h2 class="menuSubtitle">Appetizers</h2>
+            <div id="apps"></div>
+          <h2 class="menuSubtitle">Entrees</h2>
+            <div id="entrees"></div>
+          <h2 class="menuSubtitle">Desserts</h2>
+            <div id="desserts"></div>
+        </div>
+        <div class="content" id="rezBody">
+          <form action="">
+            <label for="name">Full Name</label></br>
+              <input id="name" name="name" type="text">
+            <label for="numGuests">Number of Guest</label></br>
+              <input id="numGuests" name="numGuests" type="text">
+            <label for="date">Date</label></br>
+              <input id="date" name="date" type="date">
+            <label for="notes">Special Notes</label>
+              <input id="notes" name="notes" type="text">
+            <label for="seating">Seating Preference</label>
+              <select id="seating" name="seating" type="text">
+                <option value="indoor">Indoor</option>
+                <option value="outdoor">Outdoor</option>
+              </select>
+              <button>Reserve Table!</button>
+          </form>
+        </div>
       </div>
     <!-- how do I get this to go to the side? -->
     <!-- Grid is possible but might freak it, -->

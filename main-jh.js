@@ -130,6 +130,40 @@ fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
     desserts.innerHTML = dessertFunct().join("")
   })
 
+const tabs = document.querySelector("#tabs")
+const tabButton = document.querySelectorAll(".tabBtn")
+const content = document.querySelectorAll(".content")
+
+// TOGGLE TAB FUNCT
+tabs.onclick = (e) => {
+  const id = e.target.dataset.id
+  const el = document.getElementById(id)
+  if (id) {
+    tabButton.forEach((button) => {
+      button.classList.remove("active")
+    })
+  }
+  e.target.classList.add("active")
+
+  content.forEach((item) => {
+    item.classList.remove("active")
+  })
+
+  el.classList.add("active")
+}
+
+// tabs.addEventListener("click", function (e) {
+//   e.preventDefault()
+//   const selection = e.querySelector(".content")
+//   const isActive = selection.classList.contains("active")
+//   document.querySelectorAll("content").forEach(function (el) {
+//     el.classList.remove("active")
+//   })
+//   if (!isActive) {
+//     selection.classList.add("active")
+//   }
+// })
+
 //ORIGINAL CODE here
 // fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
 //   .then((resp) => resp.json())
@@ -212,10 +246,3 @@ fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
 // </div>`
 // console.log(menu)
 // console.log(menu.appetizers)
-
-// const tabs = document.querySelector("#tabs")
-
-// tabs.addEventListener("click", function (e) {
-//   e.preventDefault
-// const select = e.target.
-// })
