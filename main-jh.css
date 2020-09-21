@@ -1,0 +1,161 @@
+/* All of the body and all encompassing css goes here */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+#main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  padding: 3% 0 0;
+}
+#tabs {
+  display: flex;
+  flex-flow: row;
+}
+.tabBtn {
+  width: 10%;
+  padding: 1% 0%;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+.tabBtn.active {
+  border-top: 1px solid black;
+}
+.tabBtn:hover {
+  cursor: pointer;
+}
+#tabContainer {
+}
+.content {
+  display: none;
+}
+.content.active {
+  display: initial;
+}
+/* STORY css */
+#storyButton {
+}
+.content#storyBody {
+  /* width: 65%; */
+}
+#storyFlex {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+#storyImg {
+  margin: 2.5% 0;
+}
+
+/* MENU css */
+/* flex display?
+  col => col(full width) */
+#menuButton {
+}
+#menuTitle {
+}
+.menuSubtitle {
+  margin: 4% 0 1.5%;
+}
+div.menuFlex {
+}
+#apps > div {
+  margin: 0.5% 0;
+}
+#entrees > div {
+  margin: 0.5% 0;
+}
+#desserts > div {
+  margin: 0.5% 0;
+}
+.content#menuBody {
+  /* width: 65%; */
+}
+#menuFlex {
+  display: flex;
+  flex-direction: column;
+}
+.itemLine {
+  display: inline-flex;
+  width: 100%;
+  align-items: baseline;
+}
+.itemName {
+}
+.vertBreak {
+  flex-grow: 1;
+  border-bottom: 2px dotted #000;
+  margin: 0% 1%;
+}
+.itemPrice {
+}
+.descLine {
+}
+
+#apps {
+}
+#entrees {
+}
+#desserts {
+}
+
+/* RESERVATION css */
+#rezButton {
+}
+.content#rezBody {
+  /* width: 65%; */
+}
+#rezFlex {
+  display: flex;
+  flex-direction: column;
+  width: 400%;
+}
+#rezFlex label {
+  margin: 1% 0 2%;
+}
+#rezFlex input {
+  padding: 1.5% 0;
+}
+#name {
+  width: 55%;
+}
+#numGuests {
+  width: 25%;
+}
+#date {
+  width: 35%;
+}
+#notes {
+  width: 50%;
+  /* width: %; */
+}
+#seating {
+  width: 15%;
+}
+#rezBtn {
+  width: 20%;
+  margin: 5% 0 0;
+}
+/* FOOD photos sidebar */
+#aside {
+  display: flex;
+  flex-flow: column;
+  margin: 0% 5%;
+  /* align-items: flex-end; */
+}
+#foodImgTitle {
+  white-space: nowrap;
+}
+.foodImg {
+  object-fit: contain;
+  width: 125px;
+  margin: 5% 0%;
+}
