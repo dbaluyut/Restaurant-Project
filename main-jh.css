@@ -33,6 +33,10 @@ body {
   cursor: pointer;
 }
 #tabContainer {
+  /* background-color: #fff3cc; */
+}
+#tabContainer.rezBody {
+  background-color: #fff;
 }
 .content {
   display: none;
@@ -50,6 +54,7 @@ body {
   display: flex;
   justify-content: center;
   flex-flow: column;
+  background-color: #fff3cc;
 }
 #storyImg {
   margin: 2.5% 0;
@@ -82,6 +87,7 @@ div.menuFlex {
 #menuFlex {
   display: flex;
   flex-direction: column;
+  background-color: #fff3cc;
 }
 .itemLine {
   display: inline-flex;
@@ -116,7 +122,8 @@ div.menuFlex {
 #rezFlex {
   display: flex;
   flex-direction: column;
-  width: 400%;
+  width: 550.5%;
+  background-color: #fff3cc;
 }
 #rezFlex label {
   margin: 1% 0 2%;
