@@ -44,7 +44,7 @@
 }
 
 body {
-  margin: 40px;
+  margin: 0 40px;
 }
 
 #hero-banner {
@@ -54,18 +54,19 @@ body {
    */
   background-image: url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
   background-position-y: -33rem;
+  border-radius: 0 8rem;
 }
 
 /* CARDS CSS */
 #cards {
   display: flex;
-  height: 18rem;
   justify-content: space-between;
   /* border: 1px solid red; */
 }
 
 .card {
   padding: 1rem;
+  height: 17rem;
 }
 
 .card h4 {
@@ -81,7 +82,7 @@ body {
 #card1 {
   width: 25rem;
   /* border: 1px solid blue; */
-  background-color: #fff3cc;
+  background-color: rgb(241, 241, 241);
 }
 
 #special-img {
@@ -129,4 +130,106 @@ body {
   margin: 1rem 0;
   display: flex;
   justify-content: center;
+}
+
+/* MAIN */
+
+#tabs {
+  display: flex;
+  justify-content: space-between;
+  height: 2.5rem;
+  border-bottom: 1px solid;
+  width: 30rem;
+  padding: 0 2rem;
+}
+
+.tab-content {
+  margin-top: 2rem;
+}
+
+#main {
+  width: 220rem;
+  /* height: auto; */
+  border: 1px solid red;
+  margin: 2rem 0;
+  border-radius: 0 10rem;
+  padding: 2rem;
+}
+
+#container {
+  display: flex;
+}
+
+/* ASIDE */
+
+#aside {
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  margin-left: 3rem;
+  width: 66rem;
+  /* height: 20rem; */
+  border: 1px solid red;
+  border-radius: 10rem 0;
+  height: 31rem;
+}
+
+.aside-img {
+  border-radius: 50%;
+  width: 12rem;
+  background-color: aqua;
+}
+
+/* STORY TAB */
+
+#tab1 {
+  display: none;
+}
+
+#story-img {
+  height: 12rem;
+  background-color: aqua;
+  margin: 2rem 0;
+}
+
+#tab-footer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#tab-footer p {
+  width: 42rem;
+}
+
+#tab-footer img {
+  /* margin-left: 2rem; */
+  border-radius: 50%;
+  height: 15rem;
+  background-color: aqua;
+}
+
+/* TAB2 */
+
+#tab2 {
+  display: none;
+  justify-content: space-between;
+}
+
+.price {
+  font-size: 2rem;
+}
+
+.item {
+  padding: 0 1rem;
+  width: 16rem;
+  height: 4rem;
+  margin: 1rem 0;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3rem;
 }

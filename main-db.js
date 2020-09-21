@@ -46,7 +46,7 @@ fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
       return (document.getElementById("special-name").innerHTML = entree1)
 
     //SUN SPECIAL
-    if (currentDay === 7)
+    if (currentDay === 0)
       return (document.getElementById("special-name").innerHTML = entree2)
   })
 
