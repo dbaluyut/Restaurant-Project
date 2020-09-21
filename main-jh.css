@@ -17,6 +17,16 @@ body {
   display: flex;
   flex-flow: row;
 }
+.tabBtn {
+  width: 10%;
+  padding: 1% 0%;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+.tabBtn:hover {
+  cursor: pointer;
+}
 #tabContainer {
 }
 .content {
@@ -31,7 +41,13 @@ body {
 .content#storyBody {
   /* width: 65%; */
 }
+#storyFlex {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
 #storyImg {
+  margin: 2.5% 0;
 }
 
 /* MENU css */
@@ -97,15 +113,31 @@ div.menuFlex {
   flex-direction: column;
   width: 400%;
 }
+#rezFlex label {
+  margin: 1% 0 2%;
+}
+#rezFlex input {
+  padding: 1.5% 0;
+}
 #name {
+  width: 55%;
 }
 #numGuests {
+  width: 25%;
 }
 #date {
+  width: 35%;
 }
 #notes {
+  width: 50%;
+  /* width: %; */
 }
 #seating {
+  width: 15%;
+}
+#rezBtn {
+  width: 20%;
+  margin: 5% 0 0;
 }
 /* FOOD photos sidebar */
 #aside {
