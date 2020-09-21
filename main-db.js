@@ -62,4 +62,94 @@ function timer(x) {
   }, 1000 * 60 * 60 * 24)
 }
 
+//TAB TOGGLE
+//STATES
+
+function test1() {
+  document.getElementById("tab1").style.display = "contents"
+  document.getElementById("tab2").style.display = "none"
+  document.getElementById("tab3").style.display = "none"
+  console.log("x")
+  document.getElementById("main").style.borderRadius = "0 10rem"
+}
+
+let menuView = function () {
+  document.getElementById("tab1").style.display = "none"
+  document.getElementById("tab2").style.display = "flex"
+  document.getElementById("tab3").style.display = "none"
+  document.getElementById("main").style.borderRadius = "0 10rem 0 6rem"
+}
+
+let rezView = function () {
+  document.getElementById("tab1").style.display = "none"
+  document.getElementById("tab2").style.display = "none"
+  document.getElementById("tab3").style.display = "flex"
+  document.getElementById("main").style.borderRadius = "0 10rem"
+}
+
 //MENU FETCH
+fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
+  .then((resp) => resp.json())
+  .then((menu) => {
+    return menu.appetizers
+  })
+  .then((appetizers) => {
+    arr = appetizers
+      .map(
+        (x) =>
+          `<div class="item">
+    <div>
+      <h4>${x.name}</h4>
+      
+    </div>
+    <h5 class="price">$${x.price}</h5>
+  </div>`
+      )
+      .join("")
+    return (document.getElementById("testapp").innerHTML = arr)
+    // console.log(appetizers)
+  })
+
+fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
+  .then((resp) => resp.json())
+  .then((menu) => {
+    return menu.entrees
+  })
+  .then((entrees) => {
+    arr = entrees
+      .map(
+        (x) =>
+          `<div class="item">
+    <div>
+      <h4>${x.name}</h4>
+      
+    </div>
+    <h5 class="price">$${x.price}</h5>
+  </div>`
+      )
+      .join("")
+    return (document.getElementById("entree-items").innerHTML = arr)
+    // console.log(entrees)
+  })
+
+fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
+  .then((resp) => resp.json())
+  .then((menu) => {
+    return menu.desserts
+  })
+  .then((desserts) => {
+    arr = desserts
+      .map(
+        (x) =>
+          `<div class="item">
+    <div>
+      <h4>${x.name}</h4>
+      
+    </div>
+    <h5 class="price">$${x.price}</h5>
+  </div>`
+      )
+      .join("")
+    return (document.getElementById("dessert-items").innerHTML = arr)
+    // console.log(dessert)
+  })

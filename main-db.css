@@ -10,6 +10,7 @@
 
 #logo h3 {
   font-weight: lighter;
+  font-family: system-ui;
 }
 
 #logo {
@@ -23,7 +24,7 @@
   height: 4rem;
   /* width: 12rem; */
   border: 1px solid green;
-  border-radius: 0 2rem 0 2rem;
+  border-radius: 0 3rem;
 }
 
 #navbar {
@@ -70,6 +71,7 @@ body {
 }
 
 .card {
+  box-shadow: 10px 10px 0px 0px rgba(138, 149, 165, 1);
   padding: 1rem;
   height: 17rem;
 }
@@ -148,6 +150,10 @@ body {
   padding: 0 2rem;
 }
 
+#tabs h3:hover {
+  cursor: pointer;
+}
+
 .tab-content {
   margin-top: 2rem;
 }
@@ -165,11 +171,20 @@ body {
 
 #container {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 1.25rem;
   align-items: center;
 }
 
 /* ASIDE */
+
+#photos {
+  position: absolute;
+  right: 14rem;
+  font-weight: bold;
+  font-size: 2rem;
+  top: 65rem;
+  transform: rotate(-45deg);
+}
 
 #aside {
   align-items: center;
@@ -192,7 +207,7 @@ body {
   height: 12rem;
   border-radius: 50%;
   width: 12rem;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 #img1 {
@@ -214,10 +229,12 @@ body {
 #tab1 {
   display: content;
 }
-
+#tab1 p {
+  margin-top: 1rem;
+}
 #story-img {
   height: 12rem;
-  background-color: aqua;
+  /* background-color: aqua; */
   margin: 2rem 0;
 }
 
@@ -245,6 +262,10 @@ body {
 
 /* TAB2 */
 
+.item-desc {
+  font-size: 0.5rem;
+}
+
 #tab2 {
   display: none;
   justify-content: space-between;
@@ -256,7 +277,7 @@ body {
 
 .item {
   padding: 0 1rem;
-  width: 16rem;
+  width: 17rem;
   height: 4rem;
   margin: 1rem 0;
   /* border: 1px solid red; */
@@ -279,6 +300,8 @@ body {
   /* border: 1px solid red; */
   display: flex;
   justify-content: center;
+  position: relative;
+  left: 2.5rem;
 }
 #rezBody input {
   font-size: 1.25rem;

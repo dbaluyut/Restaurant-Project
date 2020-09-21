@@ -14,7 +14,7 @@
     <div id="header">
       <div id="navbar">
         <div id="logo">
-          <h3>LOGO</h3>
+          <h3>D plus H</h3>
         </div>
 
         <div id="social-media-box">
@@ -79,9 +79,9 @@
     <div id="container">
       <div id="main">
         <div id="tabs">
-          <h3>OUR STORY</h3>
-          <h3>MENU</h3>
-          <h3>RESERVATIONS</h3>
+          <h3 id="h1" onclick="test1()">OUR STORY</h3>
+          <h3 id="h2" onclick="menuView()">MENU</h3>
+          <h3 id="h3" onclick="rezView()">RESERVATIONS</h3>
         </div>
         <div id="tab1" class="tab-content">
           <p>
@@ -122,61 +122,23 @@
         <div id="tab2" class="tab-content">
           <div id="appetizers">
             <h3>APPETIZERS</h3>
-            <div class="item">
+            <div id="testapp"></div>
+            <!-- <div class="item">
               <div>
                 <h4>food name</h4>
                 <p>description</p>
               </div>
               <h5 class="price">$$</h5>
-            </div>
+            </div> -->
             
           </div>
           <div id="entrees">
             <h3>ENTREE</h3>
-            <div class="item">
-              <div>
-                <h4>food name</h4>
-                <p>description</p>
-              </div>
-              <h5 class="price">$$</h5>
-            </div>
-            <div class="item">
-              <div>
-                <h4>food name</h4>
-                <p>description</p>
-              </div>
-              <h5 class="price">$$</h5>
-            </div>
-            <div class="item">
-              <div>
-                <h4>food name</h4>
-                <p>description</p>
-              </div>
-              <h5 class="price">$$</h5>
-            </div> <div class="item">
-              <div>
-                <h4>food name</h4>
-                <p>description</p>
-              </div>
-              <h5 class="price">$$</h5>
-            </div>
+        <div id="entree-items"></div>
           </div>
           <div id="desserts">
             <h3>DESSERTS</h3>
-            <div class="item">
-              <div>
-                <h4>food name</h4>
-                <p>description</p>
-              </div>
-              <h5 class="price">$$</h5>
-            </div>
-            <div class="item">
-              <div>
-                <h4>food name</h4>
-                <p>description</p>
-              </div>
-              <h5 class="price">$$</h5>
-            </div>
+            <div id="dessert-items"></div>
           </div>
         </div>
         <div id="tab3">
@@ -204,6 +166,7 @@
       </div>
 
       <div id="aside">
+        <p id="photos"></p>
         <a href="" class="aside-img" id="img1"></a>
         <a href="" class="aside-img" id="img2"></a>
         <!-- <img src="#" alt="" class="aside-img" /> -->
