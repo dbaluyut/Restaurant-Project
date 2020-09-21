@@ -42,9 +42,18 @@ body {
 #menuTitle {
 }
 .menuSubtitle {
+  margin: 1% 0;
 }
-.menuSubtitle div {
-  margin: 2.5% 0;
+div.menuFlex {
+}
+#apps > div {
+  margin: 0.5% 0;
+}
+#entrees > div {
+  margin: 0.5% 0;
+}
+#desserts > div {
+  margin: 0.5% 0;
 }
 .content#menuBody {
   /* width: 65%; */
@@ -83,6 +92,11 @@ body {
 .content#rezBody {
   /* width: 65%; */
 }
+#rezFlex {
+  display: flex;
+  flex-direction: column;
+  width: 400%;
+}
 #name {
 }
 #numGuests {
@@ -101,6 +115,7 @@ body {
   /* align-items: flex-end; */
 }
 #foodImgTitle {
+  white-space: nowrap;
 }
 .foodImg {
   object-fit: contain;
