@@ -12,6 +12,8 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  border-top: 1px solid black;
+  padding: 3% 0 0;
 }
 #tabs {
   display: flex;
@@ -23,6 +25,9 @@ body {
   outline: none;
   border: none;
   background: transparent;
+}
+.tabBtn.active {
+  border-top: 1px solid black;
 }
 .tabBtn:hover {
   cursor: pointer;
@@ -58,7 +63,7 @@ body {
 #menuTitle {
 }
 .menuSubtitle {
-  margin: 1% 0;
+  margin: 4% 0 1.5%;
 }
 div.menuFlex {
 }
