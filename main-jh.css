@@ -1,4 +1,9 @@
 /* All of the body and all encompassing css goes here */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   width: 80%;
   margin: 0 auto;
@@ -6,12 +11,13 @@ body {
 #main {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
 }
 #tabs {
   display: flex;
   flex-flow: row;
 }
-.tab {
+#tabContainer {
 }
 .content {
   display: none;
@@ -19,14 +25,11 @@ body {
 .content.active {
   display: initial;
 }
-.hide {
-  display: none;
-}
 /* STORY css */
 #storyButton {
 }
-#storyBody {
-  width: 65%;
+.content#storyBody {
+  /* width: 65%; */
 }
 #storyImg {
 }
@@ -40,8 +43,15 @@ body {
 }
 .menuSubtitle {
 }
-#menuBody {
-  width: 65%;
+.menuSubtitle div {
+  margin: 2.5% 0;
+}
+.content#menuBody {
+  /* width: 65%; */
+}
+#menuFlex {
+  display: flex;
+  flex-direction: column;
 }
 .itemLine {
   display: inline-flex;
@@ -70,8 +80,8 @@ body {
 /* RESERVATION css */
 #rezButton {
 }
-#rezBody {
-  width: 65%;
+.content#rezBody {
+  /* width: 65%; */
 }
 #name {
 }
@@ -87,12 +97,13 @@ body {
 #aside {
   display: flex;
   flex-flow: column;
-  align-items: flex-end;
+  margin: 0% 5%;
+  /* align-items: flex-end; */
 }
 #foodImgTitle {
 }
 .foodImg {
-  width: 65%;
-  margin: 5% 0;
   object-fit: contain;
+  width: 125px;
+  margin: 5% 0%;
 }
