@@ -1,6 +1,6 @@
 //API FOR TODAY'S SPECIAL
 
-//FETCH FOR TPDAY'S SPECIAL
+//FETCH FOR TODAY'S SPECIAL
 fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
   .then((resp) => resp.json())
   .then((menu) => {
@@ -61,3 +61,5 @@ function timer(x) {
     x = x + 1
   }, 1000 * 60 * 60 * 24)
 }
+
+//MENU FETCH
